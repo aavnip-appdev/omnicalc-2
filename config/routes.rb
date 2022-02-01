@@ -9,5 +9,9 @@ Rails.application.routes.draw do
   get("/multiply",{:controller=> "application", :action=> "multiply_form"})
   get("/wizard_multiply",{:controller=> "application", :action=> "multiply_results"})
 
+  get("/divide",{:controller=> "application", :action=> "divide_form"})
+
+  # get("street_to_coords/new",{:controller=> "application", :action => "street_to_coords_form"})
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
