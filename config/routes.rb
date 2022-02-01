@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   get("/subtract",{:controller => "application", :action => "subtract_form"})
   get("/wizard_subtract",{:controller => "application", :action => "subtract_results"})
 
+  get("/multiply",{:controller=> "application", :action=> "multiply_form"})
+  get("/wizard_multiply",{:controller=> "application", :action=> "multiply_results"})
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

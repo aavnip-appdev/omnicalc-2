@@ -23,4 +23,17 @@ class ApplicationController < ActionController::Base
 
     render({:template => "math/subtract_results.html.erb"})
   end
+
+  def multiply_form
+    render({:template => "math/multiply_form.html.erb"})
+  end
+
+  def multiply_results
+    @first = params.fetch("first_num").to_f
+    @second = params.fetch("second_num").to_f
+    @result = @first * @second
+
+    render({:template => "math/multiply_results.html.erb"})
+  end
+
 end
