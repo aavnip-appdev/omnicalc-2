@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get("/wizard_multiply",{:controller=> "application", :action=> "multiply_results"})
 
   get("/divide",{:controller=> "application", :action=> "divide_form"})
+  get("/wizard_divide", {:controller=> "application", :action => "divide_results"})
 
   # get("street_to_coords/new",{:controller=> "application", :action => "street_to_coords_form"})
 
